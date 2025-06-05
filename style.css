@@ -308,6 +308,16 @@ h3 {
   border-radius: 15px;
 }
 
+.maindiv4{
+  width: 90%;
+  height: 500px;
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+  border: 1px dotted black;
+}
 
 @media (max-width: 768px) {
   .row {

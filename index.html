@@ -95,10 +95,20 @@
       <p>&copy; 2025 ShopEase. All Rights Reserved</p>
     </div>
   </div>
+  <div class="uparrow" id="topscrollbtn">
+     <img src="uparrow.svg">
+  </div>
+ 
   <script>
     function toggleMenu() {
       document.getElementById('menu').classList.toggle('show');
     }
+    window.onscroll=function(){
+      document.getElementById("topscrollbtn").style.display=(document.body.scrollTop>200|| document.documentElement.scrollTop > 200) ? "block" : "none";
+    };
+    document.getElementById("topscrollbtn").onclick = function(){
+      window.scrollTo({ top:0, behavior:"smooth"});
+    };
   </script>
 </body>
 </html>
